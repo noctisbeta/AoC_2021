@@ -27,6 +27,7 @@ function first(path)
 
     println("sizes ", size(boards), size(win_con))
 
+    win_con = [25 for b in boards]
     for chosen ∈ pick_from
         for board ∈ boards
             for (i, row) ∈ enumerate(board)
